@@ -1,0 +1,261 @@
+nav {
+    position: fixed; /* You already have this */
+
+    /* Add these properties */
+    top: 0;          /* Stick to the top of the viewport */
+    left: 0;         /* Stick to the left of the viewport */
+    width: 100%;     /* Occupy the full width of the viewport */
+
+    /* Optional but good practice for styling */
+    background-color: #3771A1; /* Give it a background to hide content scrolling under it */
+    box-sizing: border-box; /* Ensures padding and borders don't add to the width */
+    padding: 10px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-right: 40px;
+    z-index: 100;
+}
+.nav-home, .nav-contact, .nav-github {
+    background-color: #F7F9BD;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: #3771A1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    border: 2px solid #3771A1;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-home:hover, .nav-contact:hover, .nav-github:hover {
+    background-color: #3771A1;
+    color: #F7F9BD;
+}
+nav img {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    
+}
+body {
+    background-color: #E6EAD5;
+    font-family: 'Satoshi', sans-serif;
+    margin: 0;
+}
+.nama {
+    padding-left: 40px;
+    padding-top: 60px;
+}
+.cv {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #3771A1;
+    background-color: #F7F9BD;
+    font-size: 17px;
+    font-weight:700;
+    text-decoration: none;
+    border: 2px solid #3771A1;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.cv:hover {
+  background-color: #3771A1;
+  color: #F7F9BD;
+}
+.cv img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.cv:hover img {
+  /* This combination makes dark icons turn white/light.
+     brightness(0) makes it black, and invert(1) turns black into white. */
+  filter: brightness(0) invert(1);
+}
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 40px;
+    font-size: 23px;
+}
+.profile-img img {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 8px 11px 8px #3771A1;
+    margin-right: 50px;
+}
+h1 {
+    color: #3771A1;
+}
+.desc {
+    color:#3771A1;
+    font-size: 20px;
+}
+h3 {
+ color: #3771A1;   
+}
+.section {
+    text-align: center;
+}
+.experience, .skills, .testimonial {
+    background-color: #D1D9C9;
+}
+.experience, .skills {
+    display: flex;
+    justify-content: center; /* centers the images horizontally */
+    align-items: center;
+    gap: 40px; /* space between the images */
+    margin-top: 20px;
+    flex-wrap: wrap
+}
+.experience img, .skills img {
+    max-width: 250px; /* make image smaller */
+    height: auto;
+    object-fit: contain;
+}
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Controls even spacing between ALL items */
+    padding: 40px;
+}
+.tester{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.left, .right {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.desc-test {
+    color: #3771A1;
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.desc-test-name{
+    color: #3771A1;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 10px;
+}
+.portfolio-left {
+    display: inline-flex;
+    padding-left: 50px;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+.portfolio-right {
+    display: inline-flex;
+    padding-right: 50px;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+    padding-bottom: 60px;
+    background-color: #D1D9C9;
+}
+.portfolio-left img {
+    width: 360px;
+    height: 180px;
+    border-radius: 15px;
+    margin-right: 40px;
+    margin-top: 40px;
+    box-shadow: 8px 11px 8px #3771A1;
+}
+.portfolio-right img {
+    width: 360px;
+    height: 180px;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 40px;
+    box-shadow: 8px 11px 8px #3771A1;
+}
+.port-desc {
+    padding-top: 40px;
+}
+.project-1, .project-2, .project-3, .project-4 {
+    color: #3771A1;
+}
+.skills-container, .testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1D9C9;
+    padding: 20px 10px;
+}
+.skills-viewport, .testi-viewport {
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+}
+.skills-slider {
+    display: flex;
+    align-items: center;
+}
+.skill-item {
+    flex: 0 0 33.333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.skill-item.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.skill-item img {
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: contain;
+}
+.testi-slider {
+    display: flex; /* Lays out all testimonials in a single long row */
+    transition: transform 0.5s ease-in-out; /* This creates the slide animation */
+}
+.testi-item {
+    /* This makes each testimonial take up the full width of the viewport */
+    flex: 1 0 100%; 
+    box-sizing: border-box;
+    padding: 0 40px; /* Adds some space on the sides */
+    
+    /* These styles are from our previous fix to align the image and text */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.testimonial-text {
+    text-align: left;
+}
+.arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+.arrow img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
