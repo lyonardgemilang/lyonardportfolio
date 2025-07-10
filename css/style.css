@@ -263,3 +263,67 @@ h3 {
     height: 50px;
     object-fit: contain;
 }
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px; 
+    }
+    .nama, .head-container, .cv-button, .portfolio-left, .portfolio-right, .portfolio-left img, .portfolio-right img {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .head-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .profile-img img {
+        width: 250px;
+        height: 250px;
+    }
+    .tag {
+        font-size: 1.8em;
+    }
+    .desc {
+        font-size: 1em;
+    }
+    .skills-viewport {
+        max-width: 250px;
+    }
+    .skill-item {
+        flex: 0 0 100%; 
+        padding: 0 10px;
+    }
+    .skill-item img {
+        max-width: 150px;
+    }
+    .testi-item {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .testimonial-text {
+        text-align: center;
+    }
+    .desc-test {
+        padding-top: 0;
+    }
+    .portfolio-left, .portfolio-right {
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .portfolio-right {
+        flex-direction: column;
+    }
+    .portfolio-left img, .portfolio-right img {
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 5px 6px #3771A1;
+    }
+}
